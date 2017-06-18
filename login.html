@@ -1,0 +1,51 @@
+<html>              
+<head> 
+  <link rel="stylesheet" href="login.css">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("im3.jpg");
+
+    /* Full height */
+    height: 60%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+</style>
+</head> 
+</body>
+<div class="bg">
+</div>
+<center>
+  <div class="container">
+   <p> <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname"  required="required" ></p>
+
+    <p><label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"  required="required" ></p>
+
+    <button onclick="myFunction()">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  </center>
+</form>
+<script>
+function myFunction()
+{
+ window.location="standard.html";
+}
+</script>
+</html>
