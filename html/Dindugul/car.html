@@ -55,6 +55,9 @@ li a:hover {
         color:black;
         opacity: 0.6;
     }
+.raj{
+margin-left:120px;
+}
 </style>
 </head>
 <body>
@@ -66,15 +69,41 @@ li a:hover {
 </div>
 <br>
 <br>
-<div class="div1">
+<div class="raj">
 <ul>
-  <li><a href="#" class="disabled">Car 3</a></li>
-  <li><a href="#news">10.00am</a></li>
-  <li><a href="#contact">1.10pm</a></li>
-  <li><a href="#about">7.00pm</a></li>
+  <li><li>
+  <li><button type="button" class="btn btn-default disabled">19/06</button></li>
+  <li><button type="button" class="btn btn-default disabled" onclick="mylast()">20/06</button></li>
+  <li><button type="button" class="btn btn btn-default" onclick="myfirst()">21/06</button></li>
   
 </ul>
 </div>
+<br><br>
+
+<div class="div1">
+<ul>
+  <li><a href="#" class="disabled">Car 3</a></li>
+  <li><a href="Car/10.00am(19).php">10.00am</a></li>
+  <li><a href="Car/1.00pm(19).php">1.00pm</a></li>
+  <li><a href="Car/6.00pm(19).php">6.00pm</a></li>
+  
+</ul>
+</div>
+<script>
+function myFunction()
+{
+ window.location="19.html"
+}
+function mylast()
+{
+ window.location="Car/20.html"
+}
+function myfirst()
+{
+ window.location="Car/21.html"
+}
+</script>
+
 </body>
 </html>
 
