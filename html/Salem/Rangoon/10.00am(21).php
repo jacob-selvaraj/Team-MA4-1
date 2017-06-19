@@ -12,7 +12,7 @@
 
       <img src="cal.jpg" alt="" />      
       <h2>
-	  <span>TODAY<br></span></h2>
+	  <span>Wednesday<br></span></h2>
 	  <h1><span>
 <p id="date"></p>
   21
@@ -20,6 +20,24 @@
 </h1>
 </div>
 </center>
+<script>
+
+function myFunction()
+{
+var today=new Date();
+var h=today.getHours();
+if(h<8||h>21)
+  {
+   alert("as this is a cooling time the price will be offer 10%");
+  }
+  else if(h>18&&h<20)
+{
+alert("as this is a peak time price will be slightly incresing than original price");
+}
+
+}
+myFunction();
+</script>
 
 <?php 
 $conn = new mysqli("localhost","root","","ticket")
